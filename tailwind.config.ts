@@ -29,59 +29,59 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        // Slack colors
+        // Times Black colors
         primary: {
-          DEFAULT: "#4A154B", // Slack purple
-          foreground: "#FFFFFF",
-          50: "#F4EBF4",
-          100: "#E9D7EA",
-          200: "#D3AFD5",
-          300: "#BD87BF",
-          400: "#A75FAA",
-          500: "#4A154B",
-          600: "#3B1039",
-          700: "#2C0C2B",
-          800: "#1E081D",
-          900: "#0F040E",
+          DEFAULT: "#D4AF37", // Gold
+          foreground: "#000000",
+          50: "#FBF6E5",
+          100: "#F7EDCC",
+          200: "#EFDB99",
+          300: "#E7C966",
+          400: "#DFB733",
+          500: "#D4AF37", // Gold
+          600: "#A98C2C",
+          700: "#7F6921",
+          800: "#544616",
+          900: "#2A230B",
         },
         secondary: {
-          DEFAULT: "#2BAC76", // Slack green
+          DEFAULT: "#B38728", // Darker gold
           foreground: "#FFFFFF",
-          50: "#EEFBF5",
-          100: "#DCF7EB",
-          200: "#B9EFD7",
-          300: "#97E7C3",
-          400: "#74DFAF",
-          500: "#2BAC76",
-          600: "#228A5E",
-          700: "#1A6747",
-          800: "#11452F",
-          900: "#092218",
+          50: "#F9F4E6",
+          100: "#F3E9CD",
+          200: "#E7D39B",
+          300: "#DBBD69",
+          400: "#CFA737",
+          500: "#B38728",
+          600: "#8F6C20",
+          700: "#6B5118",
+          800: "#473610",
+          900: "#231B08",
         },
         accent: {
-          DEFAULT: "#1264A3", // Slack blue
-          foreground: "#FFFFFF",
-          50: "#E9F2F9",
-          100: "#D3E5F3",
-          200: "#A7CBE7",
-          300: "#7BB1DB",
-          400: "#4F97CF",
-          500: "#1264A3",
-          600: "#0E5082",
-          700: "#0B3C62",
-          800: "#072841",
-          900: "#041421",
+          DEFAULT: "#E5C100", // Bright gold
+          foreground: "#000000",
+          50: "#FEFBE5",
+          100: "#FDF7CC",
+          200: "#FBEF99",
+          300: "#F9E766",
+          400: "#F7DF33",
+          500: "#E5C100",
+          600: "#B79A00",
+          700: "#897300",
+          800: "#5C4D00",
+          900: "#2E2600",
         },
-        slack: {
-          red: "#E01E5A",
-          yellow: "#ECB22E",
+        times: {
+          gold: "#D4AF37",
+          bronze: "#CD7F32",
         },
         muted: {
-          DEFAULT: "#F8F8F8", // Slack light gray
-          foreground: "#616061", // Slack text gray
+          DEFAULT: "#1A1A1A", // Dark gray
+          foreground: "#A0A0A0", // Light gray
         },
         destructive: {
-          DEFAULT: "#E01E5A", // Slack red
+          DEFAULT: "#FF4545", // Red
           foreground: "#FFFFFF",
         },
         popover: {
@@ -102,10 +102,10 @@ const config = {
         "3xl": "1.5rem",
       },
       boxShadow: {
-        slack: "0 0 0 1px rgba(0,0,0,.1), 0 4px 12px 0 rgba(0,0,0,.12)",
-        "slack-sm": "0 0 0 1px rgba(0,0,0,.1), 0 1px 3px 0 rgba(0,0,0,.08)",
-        "slack-md": "0 0 0 1px rgba(0,0,0,.1), 0 4px 8px 0 rgba(0,0,0,.1)",
-        "slack-lg": "0 0 0 1px rgba(0,0,0,.1), 0 8px 24px 0 rgba(0,0,0,.2)",
+        times: "0 0 0 1px rgba(212, 175, 55, 0.1), 0 4px 12px 0 rgba(0,0,0,.3)",
+        "times-sm": "0 0 0 1px rgba(212, 175, 55, 0.1), 0 1px 3px 0 rgba(0,0,0,.2)",
+        "times-md": "0 0 0 1px rgba(212, 175, 55, 0.1), 0 4px 8px 0 rgba(0,0,0,.2)",
+        "times-lg": "0 0 0 1px rgba(212, 175, 55, 0.1), 0 8px 24px 0 rgba(0,0,0,.3)",
       },
       keyframes: {
         "accordion-down": {

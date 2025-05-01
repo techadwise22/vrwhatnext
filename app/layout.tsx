@@ -11,7 +11,7 @@ const lato = Lato({
 })
 
 export const metadata = {
-  title: "What More - A Premium Career Community for Finance Leaders",
+  title: "VR What More - A Premium Career Community for Finance Leaders",
   description:
     "Join our exclusive community for finance professionals navigating leadership, transitions, growth, and personal branding.",
     generator: 'v0.dev'

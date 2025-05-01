@@ -37,30 +37,30 @@ export default function PricingCard({
       variants={fadeIn}
       whileHover={{ y: -5, transition: { duration: 0.3 } }}
       className={`relative rounded-lg overflow-hidden ${
-        featured ? "shadow-slack-md border-2 border-primary" : "shadow-slack-sm border border-gray-200"
-      } bg-white hover:shadow-slack transition-shadow duration-300`}
+        featured ? "shadow-times-md border-2 border-primary" : "shadow-times-sm border border-gray-800"
+      } bg-gray-900 hover:shadow-times transition-shadow duration-300`}
     >
       {badge && (
         <div
-          className="absolute top-0 right-0 px-4 py-1 text-xs font-medium text-white"
-          style={{ backgroundColor: accentColor === "#2BAC76" ? "#2BAC76" : "#4A154B" }}
+          className="absolute top-0 right-0 px-4 py-1 text-xs font-medium text-black"
+          style={{ backgroundColor: accentColor === "#2BAC76" ? "#D4AF37" : "#D4AF37" }}
         >
           {badge}
         </div>
       )}
       <div className="p-8">
-        <h3 className="text-xl font-bold text-gray-900 mb-2">{title}</h3>
+        <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
         <div className="flex items-baseline mb-4">
-          <span className="text-3xl font-bold text-gray-900">{price}</span>
-          <span className="ml-1 text-muted-foreground">{period}</span>
+          <span className="text-3xl font-bold text-primary">{price}</span>
+          <span className="ml-1 text-gray-400">{period}</span>
         </div>
-        <p className="text-muted-foreground mb-6">{description}</p>
+        <p className="text-gray-400 mb-6">{description}</p>
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <Button
             className="w-full mb-8 py-6 rounded-lg"
             style={{
-              backgroundColor: accentColor === "#2BAC76" ? "#2BAC76" : "#4A154B",
-              color: "white",
+              backgroundColor: accentColor === "#2BAC76" ? "#D4AF37" : "#D4AF37",
+              color: "black",
             }}
             asChild={title === "Executive Circle"}
           >
@@ -80,12 +80,12 @@ export default function PricingCard({
               <div
                 className="h-5 w-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
                 style={{
-                  backgroundColor: accentColor === "#2BAC76" ? "rgba(43, 172, 118, 0.1)" : "rgba(74, 21, 75, 0.1)",
+                  backgroundColor: "rgba(212, 175, 55, 0.2)",
                 }}
               >
-                <Check className="h-3 w-3" style={{ color: accentColor === "#2BAC76" ? "#2BAC76" : "#4A154B" }} />
+                <Check className="h-3 w-3 text-primary" />
               </div>
-              <span className="text-muted-foreground">{feature}</span>
+              <span className="text-gray-300">{feature}</span>
             </motion.div>
           ))}
         </div>

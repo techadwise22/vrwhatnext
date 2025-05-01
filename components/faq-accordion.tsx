@@ -8,7 +8,7 @@ const faqs = [
   {
     question: "Who is this community for?",
     answer:
-      "What More? is designed for mid-to-senior finance professionals (ages 30-55) who are navigating leadership challenges, career transitions, or seeking to expand their influence. Our members typically include CFOs, Finance Directors, VPs of Finance, Controllers, and other finance leaders looking to design their next career chapter.",
+      "VR What More? is designed for mid-to-senior finance professionals (ages 30-55) who are navigating leadership challenges, career transitions, or seeking to expand their influence. Our members typically include CFOs, Finance Directors, VPs of Finance, Controllers, and other finance leaders looking to design their next career chapter.",
   },
   {
     question: "Can I join from outside India?",
@@ -23,12 +23,12 @@ const faqs = [
   {
     question: "How is the application process structured?",
     answer:
-      "After submitting your application, our team reviews your professional background and career goals to ensure alignment with our community. Selected applicants are invited to a brief conversation to discuss their specific needs and how What More? can support their journey. We aim to create cohorts with complementary experiences and challenges.",
+      "After submitting your application, our team reviews your professional background and career goals to ensure alignment with our community. Selected applicants are invited to a brief conversation to discuss their specific needs and how VR What More? can support their journey. We aim to create cohorts with complementary experiences and challenges.",
   },
   {
-    question: "What makes What More? different from other professional communities?",
+    question: "What makes VR What More? different from other professional communities?",
     answer:
-      "Unlike generic platforms, What More? is specifically designed for finance leaders with curated connections, specialized learning tracks, and career advancement opportunities. Our community combines the exclusivity of alumni networks with the practical support of executive education and the camaraderie of peer groups.",
+      "Unlike generic platforms, VR What More? is specifically designed for finance leaders with curated connections, specialized learning tracks, and career advancement opportunities. Our community combines the exclusivity of alumni networks with the practical support of executive education and the camaraderie of peer groups.",
   },
 ]
 
@@ -52,27 +52,27 @@ export default function FAQAccordion() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.1 }}
-          className={`border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 ${
-            openIndex === index ? "shadow-slack" : "shadow-slack-sm hover:shadow-slack"
+          className={`border border-gray-800 rounded-lg overflow-hidden transition-all duration-300 ${
+            openIndex === index ? "shadow-times" : "shadow-times-sm hover:shadow-times"
           }`}
         >
           <motion.button
-            whileHover={{ backgroundColor: "rgba(0,0,0,0.02)" }}
-            className="flex justify-between items-center w-full p-6 text-left bg-white hover:bg-muted transition-colors"
+            whileHover={{ backgroundColor: "rgba(212, 175, 55, 0.05)" }}
+            className="flex justify-between items-center w-full p-6 text-left bg-gray-900 hover:bg-gray-900/80 transition-colors"
             onClick={() => toggleFAQ(index)}
             aria-expanded={openIndex === index}
           >
-            <span className={`font-medium text-lg ${openIndex === index ? "text-primary" : "text-gray-900"}`}>
+            <span className={`font-medium text-lg ${openIndex === index ? "text-primary" : "text-white"}`}>
               {faq.question}
             </span>
             <div
               className={`flex items-center justify-center h-8 w-8 rounded-full transition-all duration-300 ${
-                openIndex === index ? "bg-primary" : "bg-muted"
+                openIndex === index ? "bg-primary" : "bg-gray-800"
               }`}
             >
               <ChevronDown
                 className={`h-5 w-5 transition-transform duration-300 ${
-                  openIndex === index ? "transform rotate-180 text-white" : "text-gray-600"
+                  openIndex === index ? "transform rotate-180 text-black" : "text-gray-400"
                 }`}
               />
             </div>
@@ -85,7 +85,7 @@ export default function FAQAccordion() {
                 exit={{ height: 0, opacity: 0 }}
                 transition={{ duration: 0.3 }}
               >
-                <div className="p-6 pt-0 text-muted-foreground bg-white">{faq.answer}</div>
+                <div className="p-6 pt-0 text-gray-300 bg-gray-900">{faq.answer}</div>
               </motion.div>
             )}
           </AnimatePresence>
